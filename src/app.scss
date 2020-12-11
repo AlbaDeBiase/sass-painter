@@ -1,16 +1,3 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
-
-$bodyBackgroundColor: black;
-$bodycolor: white;
-
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-
-body{
-    background-color: $bodyBackgroundColor;
-    color:$bodycolor;
-}
+@import 'partials/_header';
+@import 'partials/_common'
