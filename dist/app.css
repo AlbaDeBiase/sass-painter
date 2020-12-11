@@ -3,7 +3,7 @@
   text-align: right;
   background-color: black;
   color: #009cff;
-  padding: 10px;
+  padding: 10px 0;
 }
 .top-navbar ul {
   list-style-type: none;
@@ -11,9 +11,14 @@
 }
 .top-navbar ul li {
   display: inline-block;
+  padding: 0 10px;
 }
 .top-navbar ul li a {
   color: #989898;
+}
+
+i, a {
+  padding: 5px;
 }
 
 * {

@@ -1,6 +1,7 @@
 $backgroundNavTop:black;
 $navColorTop:#009cff;
-$heightNavTop:10px;
+$heightNavTop:10px 0;
+$spacingNavbarTop:10px;
 
 
 
@@ -10,6 +11,8 @@ $heightNavTop:10px;
         background-color:$backgroundNavTop;
         color:$navColorTop;
         padding: $heightNavTop;
+    
+
 
 
     ul {
@@ -18,12 +21,18 @@ $heightNavTop:10px;
 
         li {
             display:inline-block;
+            padding:0 $spacingNavbarTop;
 
 
             a{
-                color:#989898;;
+                color:#989898;
+
 
             }
         }
     }
+}
+
+i,a {
+    padding: $spacingNavbarTop/2;
 }
