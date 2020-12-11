@@ -1,5 +1,6 @@
-$bodyBackgroundColor: black;
-$bodycolor: white;
+$fontbody:sans-serif;
+$sizeContainer: 1400px;
+
 
 
 *{
@@ -9,7 +10,5 @@ $bodycolor: white;
 }
 
 body{
-    background-color: $bodyBackgroundColor;
-    color:$bodycolor;
-
+    font-family: sans-serif;
 }
