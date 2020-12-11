@@ -1,6 +1,8 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
 
-$brandBackgroundColor: black;
+$bodyBackgroundColor: black;
+$bodycolor: white;
+
 
 *{
     margin:0;
@@ -8,6 +10,7 @@ $brandBackgroundColor: black;
     box-sizing: border-box;
 }
 
-body:{
-    background-color: $brandBackgroundColor;
+body{
+    background-color: $bodyBackgroundColor;
+    color:$bodycolor;
 }
