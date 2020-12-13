@@ -3,109 +3,84 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="dist/app.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <title>sass-painter</title>
     </head>
     <body>
-        <div class="container">
-            <div class="top-navbar">
-                <ul>
-                    <li><i class="fas fa-phone-alt"></i> <a href="#"> 1-877-582-6735</a> </li>
-                    <li><i class="far fa-comment-alt"></i><a href="#">Chat</a> </li>
-                    <li><i class="fas fa-user"></i> <a href="#">Sign in</a> </li>
-                    <li><i class="fas fa-shopping-cart"></i> <a href="#">Chart</a> </li>
-                    <li>
-                        <select name="cars" id="cars">
-                            <option value="volvo">English</option>
-                            <option value="saab">Francais</option>
-                            <option value="opel">Deutsch</option>
-                            <option value="audi">Italian</option>
-                          </select>
-                     </li>
-                </ul>
+        <div id="root">
+            <div class="wrapper">
+                <div class="container">
+                <div class="navbarTop">
+                    <ul>
+                        <li><i class="fas fa-phone-alt"></i> <a href="#"> 1-877-582-6735</a> </li>
+                        <li><i class="far fa-comment-alt"></i><a href="#">Chat</a> </li>
+                        <li><i class="fas fa-user"></i> <a href="#">Sign in</a> </li>
+                        <li><i class="fas fa-shopping-cart"></i> <a href="#">Chart</a> </li>
+                        <li>
+                            <select name="cars" id="cars">
+                                <option value="volvo">English</option>
+                                <option value="saab">Francais</option>
+                                <option value="opel">Deutsch</option>
+                                <option value="audi">Italian</option>
+                              </select>
+                         </li>
+                    </ul>
+                </div><!--fine navbarTop -->
+                <div class="navbarBottom">
+                    <div class="logoNav">
+                        <img src="https://www.painterartist.com/static/ptr/images/logo_painter.png" alt="">
+                    </div>
+                        <ul>
+                            <li>
+                                <a href="#">Products</a>
+                            </li>
+                            <li>
+                                <a href="#">Brusches</a>
+                             </li>
+                            <li>
+                                <a href="#">Wacom Tablets</a>
+                            </li>
+                            <li>
+                                <a href="#">Special Offers</a>
+                            </li>
+                            <li>
+                                <a href="#">Free Trials</a>
+                             </li>
+                            <li>
+                                <a href="#">Business</a>
+                            </li>
+                            <li>
+                                 <a href="#">Support</a>
+                              </li>
+                            <li>
+                                <a href="#">Learning</a>
+                            </li>
+                        </ul>
+                </div>
             </div>
+
         </div>
-        <!-- <div class="navbar">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-         <li class="nav-item">
-             <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li><li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-        </div> -->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 imgFooter">
+                            <img src="https://www.painterartist.com/static/ptr/corelAdvantage.png" alt="">
+                            <img src="https://www.painterartist.com/static/common/images/logo-bbb.png" alt="">
+                            <img src="https://lh3.googleusercontent.com/SUmcH0tgufBu-yJNzYzSyu-iKe7dwlqPjiarXEcrJYYsAZkCG0QnctY0W6gd0efMYFJ3m3s8auE=w220-h140-e365-rj-sc0x00ffffff" alt="">
+                        </div>
+                        <div id="link"class="col-md-offset-2 col-md-7">
+                            <ul>
+                                <li>
+                                    <a v-for="link in footerLink" href="#" >{{link}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="src/app.js" charset="utf-8"></script>
     </body>
 </html>
